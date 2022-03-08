@@ -1,0 +1,45 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $baseBlack;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.ui-navlink {
+    color: $baseBlack;
+    display: inline-block;
+    flex-wrap: wrap;
+    vertical-align: baseline;
+    text-decoration: none;
+    padding: 8px;
+    border-bottom: 1px solid $baseBlack;
+}
+
+.tip {
+    display: flex;
+    border: 1px solid rgba($baseBlack, 0.5);
+}
+
+.brightButton {
+    background-color: $orange;
+    color: $baseWhite;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    padding: 27px 48px;
+}

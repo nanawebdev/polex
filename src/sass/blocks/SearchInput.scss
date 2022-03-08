@@ -1,0 +1,25 @@
+.SearchInput {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    padding: 40px 0;
+
+    & input {
+        flex-grow: 1;
+    }
+
+    & button {
+        margin-left: 8px;
+        cursor: pointer;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.fa-brands {
+    color: $baseBlack;
+    font-size: 16px;
+}
