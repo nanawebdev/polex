@@ -1,9 +1,10 @@
-.Videos {
-    li {
-        list-style: none;
-    }
+.Videos__list {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    padding: 0;
+    grid-gap: 60px;
 
-    ul {
-        padding: 0;
+    & li {
+        list-style: none;
     }
 }

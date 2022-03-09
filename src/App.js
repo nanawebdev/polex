@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <header class="header container">
+      <header className="header container">
 
         <NavLink to="/" className="header__main">PolEx</NavLink>
         <nav className='header__nav'>

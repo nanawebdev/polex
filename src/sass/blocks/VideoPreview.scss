@@ -6,14 +6,20 @@
     color: $baseBlack;
 
     & li {
-        color: grey;
-        padding-right: 8px;
+        color: $greyTxt;
+        // padding: 0 8px;
         font-size: 14px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
     }
 
     & h3 {
         margin: 0;
         font-size: 26px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
     }
 
     & ul {
@@ -28,5 +34,5 @@
     width: 100%;
     height: 200px;
     background-color: black;
-    border-radius: 5px;
+    border-radius: 25px;
 }

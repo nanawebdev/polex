@@ -38,26 +38,29 @@
 
 .Exercises__start {
     display: flex;
+    width: 100%;
     position: relative;
-    height: 120px;
 
     & button {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
+        height: 60px;
+        width: 50%;
+        flex-grow: 1;
+        background-color: $mainGreen;
+        border: none;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: $baseWhite;
+        font-weight: 600;
     }
 
-    & button.active {
-        animation: toRight 1s forwards;
-    }
+    // & button.active {
+    //     animation: toRight 1s forwards;
+    // }
 }
 
-@keyframes toRight {
-    100% {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
+// @keyframes toRight {
+//     100% {
+//         left: 50%;
+//         transform: translateX(-50%);
+//     }
+// }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useMatch, useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import ExercisePage from "./ExercisePage";
+import { lessons } from "./../assets/lessons"
 
 const dataAudioExs = [
     { id: "1", title: 'алфавит' }
@@ -17,6 +18,7 @@ export default function Exercises() {
     const routeMatch = useMatch("/Exercises/:id")
     const paramsId = useParams().id
     const [theme, setTheme] = useState('Грамматика')
+
     const currentTypeOfExs = theme === 'Грамматика' ? dataGrammarExs : dataAudioExs
 
     const renderExs = () => {

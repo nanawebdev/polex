@@ -45,7 +45,7 @@ export default function Videos() {
     ): (
             <div className = "Videos container">
             <SearchInput data={videos} />
-        < ul >
+        <ul className="Videos__list">
         { renderVideosList() }
             </ul >
         </div >
