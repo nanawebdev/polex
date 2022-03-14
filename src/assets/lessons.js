@@ -1,12 +1,15 @@
 export const lessons = {
-    'alphabet': {
-        id: 'alphabet',
-        title: 'Алфавит',
-        exercises: [
-            {
-                id: 1,
-                type: 'alphabet'
-            }
-        ]
-    }
+    'grammarExs': [],
+    'audioExs': [{
+            id: 'alphabet',
+            title: 'Алфавит',
+            type: 'dataAudioExs',
+            element: 'alphabet',
+            exercises: [
+                {
+                    id: 1,
+                    type: 'alphabet'
+                }
+            ]
+        }]
 }

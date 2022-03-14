@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Alphabet from "../blocks/Alphabet";
 import teacher from './../assets/teach.png'
 
 export default function Home() {
@@ -15,10 +14,8 @@ export default function Home() {
                         для максимального результата
                     </p>
                     <NavLink to="/" className="Home__button">Наши курсы</NavLink>
-                </div></div>
-
-
-            <Alphabet />
+                </div>
+                </div>
         </div>
     )
 }

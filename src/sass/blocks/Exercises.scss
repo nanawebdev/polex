@@ -1,19 +1,33 @@
 // .Exercises {
-    
+
 // }
 
 .Exercises__bubble {
-    border: 1px solid $baseBlack;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    display: flex;  
+    border-radius: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 180px;
+    height: 240px;
+    display: flex;
     align-items: center;
     justify-content: center;
+ 
     flex-shrink: 0;
+    background-color: $baseWhite;
+    box-sizing: border-box;
+    background-image: url("./../../assets/polskaBg.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    &:hover {
+        background-color: #fff;
+    }
 
     & a {
-        color: $baseBlack;
+        background-color: rgba($baseBlack, 0.3);
+        color: $baseWhite;
         text-decoration: none;
         padding: 8px;
         width: 100%;
@@ -21,15 +35,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            background-color: rgba($baseBlack, 0.1);
+        }
     }
 }
 
 .Exercises__items {
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(3, max-content);
-    grid-gap: 16px;
+    grid-template-columns: repeat(5, max-content);
+    grid-gap: 40px;
     padding: 0;
-    justify-content: center;
 
     & li {
         list-style: none;
@@ -45,22 +63,21 @@
         height: 60px;
         width: 50%;
         flex-grow: 1;
-        background-color: $mainGreen;
+        background: $orangeGradient;
         border: none;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         color: $baseWhite;
         font-weight: 600;
+        font-size: 16px;
+
+        &:hover {
+            height: 65px;
+        }
+
+        &:active {
+            height: 75px;
+            font-size: 18px;
+        }
     }
-
-    // & button.active {
-    //     animation: toRight 1s forwards;
-    // }
 }
-
-// @keyframes toRight {
-//     100% {
-//         left: 50%;
-//         transform: translateX(-50%);
-//     }
-// }

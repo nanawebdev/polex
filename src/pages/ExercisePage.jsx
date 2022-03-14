@@ -1,9 +1,10 @@
 import React from "react";
+import Alphabet from "../blocks/Alphabet";
 
-export default function ExercisePage({title}) {
+export default function ExercisePage({title, element, exs}) {
     return (
         <div className="container">
-            <h3>{title}</h3>
+            { element === "alphabet" && <Alphabet /> }
         </div>
     )
 }

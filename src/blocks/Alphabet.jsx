@@ -180,7 +180,7 @@ function Alphabet() {
     });
 
   return (
-    <div className='Alphabet container'>
+    <div className='Alphabet'>
       <h2>Польский алфавит</h2>
       <ExDescription
         text="Нажимайте на букву, чтобы прослушать произношение. Повторяйте за записью"

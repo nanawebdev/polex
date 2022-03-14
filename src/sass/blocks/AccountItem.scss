@@ -1,0 +1,38 @@
+.AccountItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    & button {
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+    }
+
+    & span {
+        text-align: left;
+
+        color: rgba($baseBlack, 0.5);
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    & input {
+        font-weight: 600;
+        padding: 4px 8px;
+        border: none;
+        border-bottom: 1px solid $baseBlack;
+    }
+
+    & input:focus {
+        outline: none;
+    }
+
+    & input::placeholder {
+        font-weight: 400;
+    }
+}

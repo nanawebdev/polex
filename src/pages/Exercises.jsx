@@ -3,23 +3,13 @@ import { useMatch, useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import ExercisePage from "./ExercisePage";
 import { lessons } from "./../assets/lessons"
-
-const dataAudioExs = [
-    { id: "1", title: 'алфавит' }
-]
-
-const dataGrammarExs = [
-    { id: "2", title: 'родительный падеж' },
-    { id: "3", title: 'дательный падеж' },
-    { id: "4", title: 'Соединяем' },
-]
+import WriteRightText from "../blocks/WriteRightText";
 
 export default function Exercises() {
     const routeMatch = useMatch("/Exercises/:id")
     const paramsId = useParams().id
     const [theme, setTheme] = useState('Грамматика')
-
-    const currentTypeOfExs = theme === 'Грамматика' ? dataGrammarExs : dataAudioExs
+    const currentTypeOfExs = theme === 'Грамматика' ? lessons.grammarExs : lessons.audioExs
 
     const renderExs = () => {
         return currentTypeOfExs.map(v => {
@@ -35,6 +25,8 @@ export default function Exercises() {
         const exEl = currentTypeOfExs.find(v => v.id === paramsId)
 
         return <ExercisePage
+            element={exEl.element}
+            exs={exEl.exercises}
             title={exEl.title}
         />
     }
@@ -63,6 +55,8 @@ export default function Exercises() {
             <ul className="Exercises__items">
                 {renderExs()}
             </ul>
+
+            <WriteRightText />
         </div>
     )
 }

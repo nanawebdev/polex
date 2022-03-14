@@ -14,7 +14,6 @@
 
 .header__nav {
     & a {
-        cursor: pointer;
         padding: 4px;
         color: $baseWhite;
         margin-right: 8px;
@@ -23,7 +22,11 @@
         line-height: 22px;
 
         &:hover {
-            color: rgba($baseBlack, 0.5);
+            color: rgba($orange, 0.5)
+        }
+
+        &:active {
+            color: rgba($orange, 0.9)
         }
     }
 }
