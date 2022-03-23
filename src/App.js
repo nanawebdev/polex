@@ -14,7 +14,7 @@ function App() {
 
         <NavLink to="/" className="header__main">PolEx</NavLink>
         <nav className='header__nav'>
-          <NavLink to="videos">Видео</NavLink>
+          {/* <NavLink to="videos">Видео</NavLink> */}
           <NavLink to="exercises">Упражнения</NavLink>
         </nav>
 
