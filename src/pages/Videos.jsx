@@ -2,18 +2,19 @@ import React from "react";
 import { useMatch, useParams } from "react-router-dom"
 import SearchInput from "../blocks/SearchInput";
 import VideoPreview from "../blocks/VideoPreview";
+import { BUCKET_URL } from "../constants";
 import VideoPage from "./VideoPage";
 
 const videos = [
     {
         id: '1',
         tags: ['грамматика', 'множественное число', 'падежи'],
-        videoSrc: 'https://nanawebdevbucket.s3.amazonaws.com/Robimy+faworki+na+t%C5%82usty+czwartek%F0%9F%A4%97.mp4'
+        videoSrc: BUCKET_URL + '/Robimy+faworki+na+t%C5%82usty+czwartek%F0%9F%A4%97.mp4'
     },
     {
         id: '2',
         tags: ['падежи'],
-        videoSrc: 'https://nanawebdevbucket.s3.amazonaws.com/Robimy+faworki+na+t%C5%82usty+czwartek%F0%9F%A4%97.mp4'
+        videoSrc: BUCKET_URL + '/Robimy+faworki+na+t%C5%82usty+czwartek%F0%9F%A4%97.mp4'
     }
 ]
 

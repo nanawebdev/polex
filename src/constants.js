@@ -1,0 +1,1 @@
+export const BUCKET_URL = 'https://nanawebdevbucket.s3.amazonaws.com'

@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import BlankInput from "./BlankInput";
 
-const data = [
-    { id: 1, rightWord: 'anna', trainWord: 'a__a' },
-    { id: 2, rightWord: 'test', trainWord: 't__t' },
-]
-
-export default function FillBlanks() {
+export default function FillBlanks({ words }) {
 
     let blanksCount = 0
 
@@ -38,7 +33,7 @@ export default function FillBlanks() {
         });
 
     const renderWords = () =>
-        data.map(el => (
+        words.map(el => (
             <div className="FilledBlanks__trainingWord" key={el.id}>
                 {createTrainingWord(el.trainWord, el.rightWord)}
             </div>

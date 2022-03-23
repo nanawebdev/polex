@@ -6,7 +6,7 @@ export default function SearchInput({ data }) {
     const [value, setValue] = useState()
 
     const filteredValues = data.filter(v => v.tags.includes(value))
-    console.log(filteredValues);
+
 
     return (
         <div className="SearchInput">

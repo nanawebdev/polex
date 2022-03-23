@@ -3,7 +3,7 @@ import { useMatch, useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import ExercisePage from "./ExercisePage";
 import { lessons } from "./../assets/lessons"
-import WriteRightText from "../blocks/WriteRightText";
+import { BUCKET_URL } from "../constants";
 
 export default function Exercises() {
     const routeMatch = useMatch("/Exercises/:id")
@@ -11,13 +11,22 @@ export default function Exercises() {
     const [theme, setTheme] = useState('Грамматика')
     const currentTypeOfExs = theme === 'Грамматика' ? lessons.grammarExs : lessons.audioExs
 
+    const linkImg = theme === 'Грамматика'
+        ? BUCKET_URL + '/polexAssets/polskaBg.jpg'
+        : BUCKET_URL + '/polexAssets/river.jpg'
+
+
     const renderExs = () => {
         return currentTypeOfExs.map(v => {
-            return <li key={v.id} className="Exercises__bubble">
+            return <li
+                key={v.id}
+                className="Exercises__bubble"
+                style={{ background: `url(${linkImg})` }}
+            >
                 <NavLink to={`/Exercises/${v.id}`}>
                     <p>{v.title}</p>
                 </NavLink>
-            </li>
+            </li >
         })
     }
 
@@ -55,8 +64,6 @@ export default function Exercises() {
             <ul className="Exercises__items">
                 {renderExs()}
             </ul>
-
-            <WriteRightText />
         </div>
     )
 }
