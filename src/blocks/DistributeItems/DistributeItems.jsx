@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import ExDescription from "../ExDescription";
 import DistributeItemsInput from "./DistributeItemsInput";
 
 export default function DistributeItems({ data }) {
-    const [value, setValue] = useState()
+    // const [value, setValue] = useState()
 
     const inputQuantity = data.column.length
 
