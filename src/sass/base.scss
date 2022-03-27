@@ -151,13 +151,13 @@ ul {
 
 @media(max-width: $mobile) {
     .header {
-       & a {
-           display: none;
-       }
+    //    & a {
+    //        display: none;
+    //    }
 
-       & .logo {
-           display: block;
-       }
+    //    & .logo {
+    //        display: block;
+    //    }
         
     }
 }

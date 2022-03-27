@@ -17,7 +17,7 @@ export default function Layout({ children }) {
                     <div class="center">
                         <NavLink to="/" class="logo"><h3>POLEX</h3></NavLink>
                         <Navigation lis={lis} currentclassName="navigation navigation-header" />
-                        <NavLink to="/account" className="button">Аккаунт</NavLink>
+                        {/* <NavLink to="/account" className="button">Аккаунт</NavLink> */}
                     </div>
                 </header>
                

@@ -1,5 +1,5 @@
 import './sass/styles.scss';
-import Videos from './pages/Videos';
+// import Videos from './pages/Videos';
 import { Routes, Route } from "react-router-dom";
 import Exercises from './pages/Exercises';
 import NotFound from './pages/NotFound';
@@ -14,8 +14,8 @@ function App() {
         <Route path="/" exact element={<Main />} />
         <Route path="/exercises/:id" element={<Exercises />} />
         <Route path="/exercises" element={<Exercises />} />
-        <Route path="/videos/:id" element={<Videos />} />
-        <Route path="/videos" element={<Videos />} />
+        {/* <Route path="/videos/:id" element={<Videos />} />
+        <Route path="/videos" element={<Videos />} /> */}
         <Route path="/alphabet" element={<Alphabet />} />
         {/* <Route path="/account" element={<Account />} />
         <Route path="/login" element={<Account />} /> */}

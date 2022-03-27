@@ -2,6 +2,7 @@ import React from "react";
 import footerTop from "./../../assets/svg/footerTop.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
+import NotFinished from "../NotFinished";
 // import { useMatch, useParams } from "react-router";
 // import { NavLink } from "react-router-dom";
 // import Exercise from "../Exercise";
@@ -42,6 +43,7 @@ export default function Exercises() {
 
     return (
         <div class="exerscises">
+            <NotFinished />
             <section class="exersices__search center">
                 <h3>Поиск по упражнениям:</h3>
                 <div>
