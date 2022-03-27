@@ -59,7 +59,9 @@ export default function Main() {
 
                     <h3>Список первых доступных упражнений:</h3>
                     <ul>
-                        <NavLink to="/alphabet">Алфавит</NavLink>
+                        <NavLink to="/alphabet">
+                            1. Алфавит
+                            </NavLink>
                     </ul>
                 </div>
                

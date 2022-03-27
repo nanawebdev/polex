@@ -148,3 +148,16 @@ ul {
     margin: 0 auto;
     max-width: 1200px;
 }
+
+@media(max-width: $mobile) {
+    .header {
+       & a {
+           display: none;
+       }
+
+       & .logo {
+           display: block;
+       }
+        
+    }
+}
