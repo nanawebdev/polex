@@ -1,0 +1,140 @@
+.main {
+}
+
+.main__benefits {
+    background-color: $baseLightBg;
+    padding: 100px 20px;
+    margin-bottom: 100px;
+    position: relative;
+
+    & svg {
+        width: auto;
+        height: 50px;
+    }
+
+    & path {
+        fill: $svgRed;
+    }
+
+    & ul {
+        margin: 0 auto;
+       
+        justify-content: center;
+        display: flex;
+        box-shadow: 0 0 1px solid rgba($textDark, 0.5);
+    }
+
+    & li {
+        position: relative;
+        text-align: center;
+        padding: 30px;
+        flex-grow: 1;
+        background-color: $baseWhite;
+    }
+
+    & li:nth-child(2)::after,
+    & li:nth-child(2)::before {
+        position: absolute;
+        content: '';
+        top: 10%;
+        bottom: 10%;
+        width: 1px;
+        background-color: rgba($textDark, 0.1);
+    }
+
+    & li:nth-child(2)::after {
+        left: 0;
+    }
+
+    & li:nth-child(2)::before {
+        right: 0;
+    }
+
+    & p {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.45em;
+    }
+
+    & h3 {
+        font-weight: 100;
+        color: rgba($textDark, 0.5);
+    }
+
+
+}
+
+.main__top {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    background-image: url('./../../assets/svg/rightImgMain.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    min-height: 306px;
+    box-sizing: border-box;
+ 
+    & h1 {
+        font-family: "Roboto Slab", sans-serif;
+        text-transform: uppercase;
+        margin: 8px;
+        line-height: 70px;
+        font-weight: 100;
+        font-size: 70px;
+    }
+
+    background-color: $baseLightBg;
+}
+
+.main__image {
+    background-image: url('./../../assets/teach.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+}
+
+.main__promo {
+    padding: 20px;
+   
+    & h2 {
+        line-height: 2.5rem;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $svgRed;
+        margin-bottom: 4rem;
+        font-family: "Roboto Slab", sans-serif;
+    }
+
+    & p {
+        font-family: "Roboto Slab", sans-serif;
+        margin: 16px 0;
+        color: rgba($textDark, 0.8);
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    & h3 {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+}
+
+.main__title {
+    display: flex;
+}
+
+.promo__svgs {
+    margin-right: 3rem;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: auto;
+    background-position: 0 100%;
+    background-size: contain;
+    background-image: url("./../../assets/svg/imgMainGirl.svg");
+}

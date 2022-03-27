@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ExDescription from "../ExDescription";
+import Tip from '../../elements/Tip';
 import WriteRightTextItem from './WriteRightTextItem';
 
 export default function WriteRightText({ wrtExs }) {
@@ -25,7 +25,7 @@ export default function WriteRightText({ wrtExs }) {
 
     return (
         <div className="WriteRightText">
-            <ExDescription text="Напишите перевод фразы" />
+            <Tip text="Напишите перевод фразы" />
             {renderQ()}
         </div>
     )

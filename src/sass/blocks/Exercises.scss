@@ -2,83 +2,172 @@
 
 // }
 
-.Exercises__bubble {
-    border-radius: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    width: 180px;
-    height: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
- 
-    flex-shrink: 0;
-    background-color: $baseWhite;
-    box-sizing: border-box;
-    // background-image: url("./../../assets/polskaBg.jpg");
-    background-position: center;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+// .Exercises__bubble {
+//     border-radius: 15px;
+//     font-weight: 600;
+//     text-transform: uppercase;
+//     width: 180px;
+//     height: 240px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
 
-    &:hover {
-        background-color: #fff;
+//     flex-shrink: 0;
+//     background-color: $baseWhite;
+//     box-sizing: border-box;
+//     // background-image: url("./../../assets/polskaBg.jpg");
+//     background-position: center;
+//     object-fit: cover;
+//     background-repeat: no-repeat;
+//     overflow: hidden;
+
+//     &:hover {
+//         background-color: #fff;
+//     }
+
+//     & a {
+//         background-color: rgba($baseBlack, 0.3);
+//         color: $baseWhite;
+//         text-decoration: none;
+//         padding: 8px;
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         &:hover {
+//             background-color: rgba($baseBlack, 0.1);
+//         }
+//     }
+// }
+
+// .Exercises__items {
+//     margin-top: 40px;
+//     display: grid;
+//     grid-template-columns: repeat(5, max-content);
+//     grid-gap: 40px;
+//     padding: 0;
+
+//     & li {
+//         list-style: none;
+//     }
+// }
+
+// .Exercises__start {
+//     display: flex;
+//     width: 100%;
+//     position: relative;
+
+//     & button {
+//         height: 60px;
+//         width: 50%;
+//         flex-grow: 1;
+//         background: $orangeGradient;
+//         border: none;
+//         border-bottom-left-radius: 20px;
+//         border-bottom-right-radius: 20px;
+//         color: $baseWhite;
+//         font-weight: 600;
+//         font-size: 16px;
+
+//         &:hover {
+//             height: 65px;
+//         }
+
+//         &:active {
+//             height: 75px;
+//             font-size: 18px;
+//         }
+//     }
+// }
+
+.exerscises {
+    background-color: $baseLightBg;
+    position: relative;
+}
+
+.exercises__svg {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.exersices__search {
+    padding: 20px;
+
+    & h3 {
+        margin: 0;
+        margin-bottom: 2rem;
+        margin-left: 16px;
+        font-size: 1.5rem;
     }
 
-    & a {
-        background-color: rgba($baseBlack, 0.3);
-        color: $baseWhite;
-        text-decoration: none;
-        padding: 8px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    & path {
+        fill: rgba($textDark, 0.5);
+    }
 
-        &:hover {
-            background-color: rgba($baseBlack, 0.1);
+    & input {
+        padding: 16px;
+        border: none;
+        background-color: $baseWhite;
+        width: 100%;
+        font-size: 1.5rem;
+
+        &:focus {
+            outline: none;
         }
+    }
+
+    & input::placeholder {
+        color: rgba($textDark, 0.3);
+        font-weight: 100;
+    }
+
+    & svg {
+        width: auto;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    & div {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        background-color: $baseWhite;
     }
 }
 
-.Exercises__items {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(5, max-content);
-    grid-gap: 40px;
-    padding: 0;
+.exercises__tabs {
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
 
     & li {
-        list-style: none;
+        box-shadow: 0 1px 2px rgba($textDark, 0.1);
+        color: rgba($textDark, 0.8);
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 20px;
+        margin: 4px 8px;
+        padding: 16px;
+        font-size: 12px;
+        background-color: $baseWhite;
     }
-}
 
-.Exercises__start {
-    display: flex;
-    width: 100%;
-    position: relative;
-
-    & button {
-        height: 60px;
-        width: 50%;
-        flex-grow: 1;
-        background: $orangeGradient;
-        border: none;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        color: $baseWhite;
-        font-weight: 600;
-        font-size: 16px;
-
-        &:hover {
-            height: 65px;
-        }
-
-        &:active {
-            height: 75px;
-            font-size: 18px;
-        }
+    & li:hover {
+        cursor: pointer;
+        color: $svgRed;
     }
 }

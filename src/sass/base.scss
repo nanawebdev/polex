@@ -1,19 +1,21 @@
 body,
-html {
+html,
+#root {
     height: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: $baseBlack;
     padding: 0;
     margin: 0;
     font-weight: 400;
-    background-color: $mainBg;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 a {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -31,13 +33,7 @@ a {
     border-bottom: 1px solid $baseBlack;
 }
 
-.tip {
-    display: flex;
-    border: 1px solid rgba($baseBlack, 0.5);
-}
-
 .brightButton {
-    background-color: $orange;
     color: $baseWhite;
     font-weight: 600;
     font-size: 25px;
@@ -48,4 +44,107 @@ a {
 button,
 a {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    & li {
+        list-style: none;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.header {
+    background-color: $baseLightBg;
+    position: relative;
+
+    & h3 {
+        margin: 0;
+        font-family: "Roboto Slab", sans-serif;
+        color: $logo;
+        font-weight: 900;
+    }
+
+    & .button {
+        color: $baseWhite;
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 24px;
+        background-color: $logo;
+        padding: 16px;
+        border-radius: 5px;
+    }
+}
+
+.header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 25px;
+}
+
+.footer {
+    margin-top: 200px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: $baseLightBg;
+    position: relative;
+    padding: 20px;
+}
+
+.top-line__svg {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -70%;
+    left: 0;
+}
+
+
+.bottom-line__svg {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+
+.center {
+    margin: 0 auto;
+    max-width: 1200px;
 }

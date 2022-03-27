@@ -1,7 +1,8 @@
 import React from 'react';
-import { BUCKET_URL } from '../constants';
-import AudioEl from './AudioEl';
-import ExDescription from './ExDescription';
+import AudioEl from '../../elements/AudioEl';
+import Tip from '../../elements/Tip';
+import { BUCKET_URL } from '../../constants';
+import footerTop from "./../../assets/svg/footerTop.svg"
 
 const chars = [
   {
@@ -166,7 +167,7 @@ const chars = [
   },
 ];
 
-function Alphabet() {
+export default function Alphabet() {
   const renderAlphabet = () =>
     chars.map(v => {
       const upperChar = v.char.toUpperCase();
@@ -182,15 +183,17 @@ function Alphabet() {
 
   return (
     <div className='Alphabet'>
+      <div className="top-line__svg" style={{ backgroundImage: "url(" + footerTop + ")" }}></div>
+
       <h2>Польский алфавит</h2>
-      <ExDescription
+      <Tip
         text="Нажимайте на букву, чтобы прослушать произношение. Повторяйте за записью"
       />
       <ul>
         {renderAlphabet()}
       </ul>
+      <div className="bottom-line__svg" style={{ backgroundImage: "url(" + footerTop + ")" }}></div>
+
     </div>
   );
 }
-
-export default Alphabet;

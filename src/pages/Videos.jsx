@@ -1,9 +1,7 @@
 import React from "react";
 import { useMatch, useParams } from "react-router-dom"
-import SearchInput from "../blocks/SearchInput";
-import VideoPreview from "../blocks/VideoPreview";
 import { BUCKET_URL } from "../constants";
-import VideoPage from "./VideoPage";
+import VideoPreview from "../elements/VideoPreview";
 
 const videos = [
     {
@@ -35,17 +33,17 @@ export default function Videos() {
         const videoSrc = videoEl.videoSrc
         const tags = videoEl.tags
 
-        return <VideoPage
-            videoSrc={videoSrc}
-            tags={tags}
-        />
+        // return <VideoPage
+        //     videoSrc={videoSrc}
+        //     tags={tags}
+        // />
     }
 
     return routeMatch ? (
         renderVideoPage()
     ): (
             <div className = "Videos container">
-            <SearchInput data={videos} />
+            {/* <SearchInput data={videos} /> */}
         <ul className="Videos__list">
         { renderVideosList() }
             </ul >

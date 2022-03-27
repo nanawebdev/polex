@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BlankInput from "./BlankInput";
+import BlankInput from "../elements/BlankInput";
 
 export default function FillBlanks({ words }) {
 

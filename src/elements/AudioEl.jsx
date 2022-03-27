@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay } from "@fortawesome/free-solid-svg-icons"
 
 export default function AudioEl(props) {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -22,7 +24,7 @@ export default function AudioEl(props) {
           <code>audio</code> element.
         </audio>
         <button type="button" onClick={() => playSound()}>
-          <i className="far fa-play-circle" />
+          <FontAwesomeIcon icon={faPlay} />
         </button>
       </div>
     );

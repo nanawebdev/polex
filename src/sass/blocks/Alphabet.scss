@@ -1,5 +1,7 @@
 .Alphabet {
   text-align: center;
+  background-color: $baseLightBg;
+  position: relative;
 
   & ul {
     display: flex;
@@ -12,7 +14,11 @@
 
   & h2 {
     text-align: center;
-    margin: 40px 0;
+    padding: 40px 0;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: "Roboto Slab", sens-serif;
   }
 }
 
@@ -31,12 +37,40 @@
   box-sizing: border-box;
 
   &:hover {
-    box-shadow: 1px 4px 1px $orange;
+    box-shadow: 1px 4px 1px $textHover;
   }
 
   & p {
     font-size: 60px;
+    line-height: 60px;
     margin: 0;
     align-self: center;
+  }
+}
+
+@media (max-width: $tablet) {
+  .Alphabet {
+    padding: 0 16px;
+
+    & ul {
+      margin-top: 20px;
+    }
+  
+    & h2 {
+      text-align: left;
+      padding: 20px 0;
+    }
+  }
+  
+  .Alphabet__item {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+  
+    & p {
+      font-size: 40px;
+      line-height: 40px;
+      align-self: center;
+    }
   }
 }

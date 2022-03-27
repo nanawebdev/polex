@@ -8,18 +8,33 @@
         border: none;
         background-color: transparent;
     }
+
+    & svg {
+        color: $svgRed;
+        font-size: 48px;
+        margin: 0;
+    
+        &:hover {
+            transform: scale(1.2);
+            color: rgba($svgRed, 0.7);
+        }
+    
+        &:active {
+            transform: scale(1.1);
+            color: rgba($svgRed, 0.9);
+        }
+    }
 }
 
-.fa-play-circle {
-    color: $orange;
-    font-size: 48px;
-    margin: 0;
+@media (max-width: $tablet) {
+    .AudioEl {
+        & svg {
+            font-size: 30px;
+        }
 
-    &:hover {
-        color: rgba($orange, 0.7);
-    }
-
-    &:active {
-        color: rgba($orange, 0.9);
+        & button {
+            width: 30px;
+            height: 30px;
+        }
     }
 }

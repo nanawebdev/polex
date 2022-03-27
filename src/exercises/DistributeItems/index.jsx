@@ -1,6 +1,6 @@
 import React from "react";
-import ExDescription from "../ExDescription";
-import DistributeItemsInput from "./DistributeItemsInput";
+import Tip from "../../elements/Tip";
+import DistributeItemsInput from "./UIInput";
 
 export default function DistributeItems({ data }) {
     // const [value, setValue] = useState()
@@ -25,7 +25,7 @@ export default function DistributeItems({ data }) {
 
     return (
         <div className="DistributeItems">
-            <ExDescription text="Распредели слова" />
+            <Tip text="Распредели слова" />
 
             <div style={{ display: 'flex' }}>
                 <ul>

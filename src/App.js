@@ -1,38 +1,27 @@
 import './sass/styles.scss';
 import Videos from './pages/Videos';
-import { Routes, Route, NavLink } from "react-router-dom";
-import Home from './pages/Home';
+import { Routes, Route } from "react-router-dom";
 import Exercises from './pages/Exercises';
-import NotFoundPage from './pages/NotFoundPage';
-import Account from './pages/Account';
+import NotFound from './pages/NotFound';
+import Layout from './blocks/Layout';
+import Main from './pages/Main';
+import Alphabet from './exercises/Alphabet';
 
 function App() {
-
   return (
-    <>
-      <header className="header container">
-
-        <NavLink to="/" className="header__main">PolEx</NavLink>
-        <nav className='header__nav'>
-          {/* <NavLink to="videos">Видео</NavLink> */}
-          <NavLink to="exercises">Упражнения</NavLink>
-        </nav>
-
-        <NavLink to="/account" className="header__account">Аккаунт</NavLink>
-      </header>
-
+    <Layout>
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" exact element={<Main />} />
         <Route path="/exercises/:id" element={<Exercises />} />
         <Route path="/exercises" element={<Exercises />} />
         <Route path="/videos/:id" element={<Videos />} />
         <Route path="/videos" element={<Videos />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/login" element={<Account />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="/alphabet" element={<Alphabet />} />
+        {/* <Route path="/account" element={<Account />} />
+        <Route path="/login" element={<Account />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
-
-    </>
+    </Layout>
   );
 }
 

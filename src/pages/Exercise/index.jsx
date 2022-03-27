@@ -1,10 +1,10 @@
 import React from "react";
-import Alphabet from "../blocks/Alphabet";
-import DistributeItems from "../blocks/DistributeItems/DistributeItems";
-import FillBlanks from "../blocks/FillBlanks";
-import WriteRightText from "../blocks/WriteRightText/WriteRightText";
+import Alphabet from "../../exercises/Alphabet";
+import DistributeItems from "../../exercises/DistributeItems";
+import FillBlanks from "../../exercises/FillBlanks";
+import WriteRightText from "../../exercises/WriteRightText";
 
-export default function ExercisePage({title, element, exs}) {
+export default function Exercise({title, element, exs}) {
     return (
         <div className="container">
             { element === "alphabet" && <Alphabet /> }

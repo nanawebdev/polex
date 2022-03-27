@@ -1,0 +1,39 @@
+.not-finished {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($textDark, 0.8);
+    z-index: 1;
+    color: $baseWhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    & a {
+        display: block;
+        color: $baseWhite;
+        border: 2px solid $logo;
+        padding: 16px;
+        background-color: $logo;
+        border-radius: 5px;
+        margin-top: 4rem;
+        text-align: center;
+
+        &:hover {
+            background-color: rgba($logo, 0.7);
+        }
+
+        &:active {
+            background-color: rgba($logo, 0.9);
+            transform: scale(1.2);
+        }
+    }
+}
+
