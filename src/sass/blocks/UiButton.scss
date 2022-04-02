@@ -1,0 +1,29 @@
+.ui-button {
+    border: 2px solid rgba($logo, 0.7);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba($logo, 0.9);
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: rgba($logo, 0.5);
+        color: #ffffff;
+    }
+
+    &:active {
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width: $tablet) {
+    .ui-button {
+        width: 20px;
+        height: 20px;
+    }
+}

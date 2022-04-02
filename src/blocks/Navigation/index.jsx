@@ -12,7 +12,7 @@ export default function Navigation({ lis, currentClass }) {
     }
 
     return (
-        <ul class={`navigation ${currentClass}`}>
+        <ul className={`navigation ${currentClass}`}>
             {lis.lingth !== 0 && renderNavigationItems()}
         </ul>
     )

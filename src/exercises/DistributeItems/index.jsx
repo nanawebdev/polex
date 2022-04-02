@@ -7,8 +7,6 @@ export default function DistributeItems({ data }) {
 
     const inputQuantity = data.column.length
 
-    console.log(data.column.length);
-
 
     const renderInputs = () => {
         return <DistributeItemsInput />

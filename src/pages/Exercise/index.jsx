@@ -1,16 +1,18 @@
 import React from "react";
 import Alphabet from "../../exercises/Alphabet";
-import DistributeItems from "../../exercises/DistributeItems";
-import FillBlanks from "../../exercises/FillBlanks";
-import WriteRightText from "../../exercises/WriteRightText";
+// import DistributeItems from "../../exercises/DistributeItems";
+// import FillBlanks from "../../exercises/FillBlanks";
+import PutRightForm from "../../exercises/PutRightForm";
+// import WriteRightText from "../../exercises/WriteRightText";
 
-export default function Exercise({title, element, exs}) {
+export default function Exercise({data, element}) {
     return (
-        <div className="container">
-            { element === "alphabet" && <Alphabet /> }
-            { element === "writeRightText" && <WriteRightText wrtExs={exs} /> }
-            { element === "fillBlanks" && <FillBlanks words={exs} /> }
-            { element === "distributeItems" && <DistributeItems data={exs} /> }
+        <div>
+            { element === "alphabet" && <Alphabet data={data} /> }
+            { element === "putInRightForm" && <PutRightForm data={data} /> }
+            {/* { element === "writeRightText" && <WriteRightText data={data} /> }
+            { element === "fillBlanks" && <FillBlanks data={data} /> }
+            { element === "distributeItems" && <DistributeItems data={data} /> } */}
         </div>
     )
 }

@@ -1,0 +1,92 @@
+.putInRightForm {
+    align-items: center;
+    font-size: 20px;
+    line-height: 22px;
+    display: grid;
+
+    & input {
+        margin: 0 8px;
+        border: none;
+        color: $logo;
+        border-bottom: 1px solid #000;
+        outline: none;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    & p {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    & span {
+        margin: 10px 4px;
+    }
+}
+
+.PutRightForm__item {
+    margin: 30px 0;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #9ef49f;
+        opacity: 0.4;
+        transition: all 1s;
+    }
+}
+
+.PutRightForm__item.PutRightForm__item--done {
+    &::after {
+        left: 0;
+    }
+}
+
+.PutRightForm__input {
+    position: relative;
+    overflow: hidden;
+}
+
+.PutRightForm__helper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($baseLightBg, 1);
+    color: $textDark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.PutRightForm__helper--show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.putInRightForm__items {
+    padding-top: 70px;
+}
+
+@media (max-width: $tablet) {
+    .putInRightForm {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+}

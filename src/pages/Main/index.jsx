@@ -3,21 +3,20 @@ import { faBullhorn } from "@fortawesome/free-solid-svg-icons"
 import { faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { faTelegram } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import footerTop from "./../../assets/svg/footerTop.svg"
+import borderLight from "./../../assets/svg/borderLight.svg"
 import { NavLink } from "react-router-dom";
-
-
+import SvgElement from "../../elements/SvgElement";
 
 export default function Main() {
 
     return (
         <main className="main">
-            <div class="main__top">
+            <div className="main__top">
                 <h1>Уроки <br /> польского <br /> с носителем</h1>
             </div>
 
-            <section class="main__benefits">
-                <ul class="center">
+            <section className="main__benefits">
+                <ul className="center">
                     <li>
                         <FontAwesomeIcon icon={faBullhorn} />
                         <h3>препод носитель</h3>
@@ -36,10 +35,11 @@ export default function Main() {
                         <p>Будь в курсе выходящих видео и общайся в нашем чате</p>
                     </li>
                 </ul>
-                <div className="bottom-line__svg" style={{ backgroundImage: "url(" + footerTop + ")" }}></div>
+                <SvgElement currentClass="bottom-line__svg" svg={borderLight} />
+          
             </section>
 
-            <section class="main__promo promo">
+            <section className="main__promo promo">
                 <div className="center">
 
                     <div className="main__title">
@@ -54,19 +54,13 @@ export default function Main() {
                             <p>Но вы уже можете пользоваться некоторыми возможностями и давать
                                 обратную связь
                             </p>
+
+                            <NavLink to="/exercises">упражнения</NavLink>
                         </div>
                     </div>
-
-                    <h3>Список первых доступных упражнений:</h3>
-                    <ul>
-                        <NavLink to="/alphabet">
-                            1. Алфавит
-                            </NavLink>
-                    </ul>
                 </div>
                
             </section>
-
 
         </main >
     )

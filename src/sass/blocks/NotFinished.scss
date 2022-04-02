@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($textDark, 0.8);
+    background-color: rgba($exLightBg, 1);
     z-index: 1;
     color: $baseWhite;
     display: flex;
@@ -21,6 +21,7 @@
         color: $baseWhite;
         border: 2px solid $logo;
         padding: 16px;
+        width: 85%;
         background-color: $logo;
         border-radius: 5px;
         margin-top: 4rem;

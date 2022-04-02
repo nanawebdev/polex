@@ -1,52 +1,33 @@
 export const lessons = {
-    'grammarExs': [
-        {
-            id: 'wrt-1',
-            title: 'Переведи сам',
-            type: '',
-            element: 'writeRightText',
-            exercises: [
-                {
-                    id: 1,
-                    example: 'яблоко',
-                    answer: 'jabłko'
-                },
-                {
-                    id: 2,
-                    example: 'xуяблоко',
-                    answer: '2'
-                }
+    data: [
+        {   
+            id: '1',
+            title: 'Задание 1',
+            description: 'Поставь глагол в нужную форму',
+            tags: ['grammar'],
+            element: 'putInRightForm',
+            items: [
+                    { id: 1, leftPart: 'Jarek', rightPart: 'studentem i lubi frytki z keczupem', rightAnswer: 'jest', word: 'być' },
+                    { id: 2, leftPart: 'Ja', rightPart: 'wegetarianką', rightAnswer: 'jestem', word: 'być' },
+                    { id: 3, leftPart: 'Czy ty', rightPart: 'lekarzem?', rightAnswer: 'jesteś', word: 'być' },
+                    { id: 4, leftPart: 'One', rightPart: 'studentkami polonistyki.', rightAnswer: 'są', word: 'być' },
+                    { id: 5, leftPart: 'Ja', rightPart: 'uczniem', rightAnswer: 'Jestem', word: 'być' },
+                    { id: 6, leftPart: 'Ja', rightPart: 'Jacek', rightAnswer: 'Jestem', word: 'być' },
+                    { id: 7, leftPart: 'Jacek', rightPart: 'bratem Ani', rightAnswer: 'jest', word: 'być' },
+                    { id: 8, leftPart: 'Agnieszka Kowalska', rightPart: 'polką', rightAnswer: 'jest', word: 'być' },
+                    { id: 9, leftPart: 'Wy', rightPart: 'świetnymi studentami.', rightAnswer: 'Jesteście', word: 'być' },
+                    { id: 10, leftPart: 'Czy to', rightPart: 'twoje dzieci?', rightAnswer: 'są', word: 'być' },
+                    { id: 11, leftPart: 'To nie', rightPart: 'twoja sprawa', rightAnswer: 'jest', word: 'być' },
+                    { id: 12, leftPart: 'Dlaczego wy nie', rightPart: 'na lekcjach?', rightAnswer: 'jesteście', word: 'być' },
+                    { id: 13, leftPart: 'Czy wy ', rightPart: ' głodni?', rightAnswer: 'jesteście', word: 'być' },
             ]
         },
         {
-            id: 'fb-1',
-            title: 'Заполни пропущенные буквы',
-            type: '',
-            element: 'fillBlanks',
-            exercises: [
-                { id: 1, rightWord: 'anna', trainWord: 'a__a' },
-                { id: 2, rightWord: 'test', trainWord: 't__t' },
-            ]
+            id: '2',
+            title: 'Алфавит',
+            description: 'Послушай и повтори',
+            element: 'alphabet',
+            tags: ['audition'],
         },
-        {
-            id: 'di-1',
-            title: 'Распредели слова',
-            type: '',
-            element: 'distributeItems',
-            exercises: { id: 1, column: ['1', '2'], variants: ['2', '1'], rightOrder: ['1', '2']}
-
-        }
-    ],
-    'audioExs': [{
-        id: 'alphabet',
-        title: 'Алфавит',
-        type: 'dataAudioExs',
-        element: 'alphabet',
-        exercises: [
-            {
-                id: 1,
-                type: 'alphabet'
-            }
-        ]
-    }]
+    ]
 }

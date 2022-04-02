@@ -1,102 +1,71 @@
-// .Exercises {
+.Exercises__bubble {
+    border: 2px solid $exLightBg;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    display: flex;
+    box-sizing: border-box;
+    width: 85%;
+    cursor: pointer;
+    transition: all 0.3s;
 
-// }
+    & a {
+        display: flex;
+        flex-direction: column;
+        color: $logo;
+        width: 100%;
 
-// .Exercises__bubble {
-//     border-radius: 15px;
-//     font-weight: 600;
-//     text-transform: uppercase;
-//     width: 180px;
-//     height: 240px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     text-align: center;
+        & span {
+            color: rgba($logo, 0.7);
+            padding: 8px 16px;
+            position: relative;
+            overflow: hidden;
+        }
 
-//     flex-shrink: 0;
-//     background-color: $baseWhite;
-//     box-sizing: border-box;
-//     // background-image: url("./../../assets/polskaBg.jpg");
-//     background-position: center;
-//     object-fit: cover;
-//     background-repeat: no-repeat;
-//     overflow: hidden;
+        & span:first-child {
+            color: rgba($logo, 1);
+            font-weight: 500;
+            border-bottom:  1px solid $exLightBg;
+        }
+    } 
 
-//     &:hover {
-//         background-color: #fff;
-//     }
+    & span::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        height: 100%;
+        width: 100%;
+       transition: all 0.3s;
+    }
 
-//     & a {
-//         background-color: rgba($baseBlack, 0.3);
-//         color: $baseWhite;
-//         text-decoration: none;
-//         padding: 8px;
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
+    & span:first-child::after {
+        left: 0;
+        background-color: rgba($logo, 0.1);
+        transform: translateY(-100%);
+    }
 
-//         &:hover {
-//             background-color: rgba($baseBlack, 0.1);
-//         }
-//     }
-// }
+    & span:last-child::after {
+        right: 0;
+        background-color: rgba($exLightBg, 0.4);
+        transform: translateY(100%);
+    }
 
-// .Exercises__items {
-//     margin-top: 40px;
-//     display: grid;
-//     grid-template-columns: repeat(5, max-content);
-//     grid-gap: 40px;
-//     padding: 0;
-
-//     & li {
-//         list-style: none;
-//     }
-// }
-
-// .Exercises__start {
-//     display: flex;
-//     width: 100%;
-//     position: relative;
-
-//     & button {
-//         height: 60px;
-//         width: 50%;
-//         flex-grow: 1;
-//         background: $orangeGradient;
-//         border: none;
-//         border-bottom-left-radius: 20px;
-//         border-bottom-right-radius: 20px;
-//         color: $baseWhite;
-//         font-weight: 600;
-//         font-size: 16px;
-
-//         &:hover {
-//             height: 65px;
-//         }
-
-//         &:active {
-//             height: 75px;
-//             font-size: 18px;
-//         }
-//     }
-// }
-
-.exerscises {
-    background-color: $baseLightBg;
-    position: relative;
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+.Exercises__bubble:hover span:first-child::after,
+.Exercises__bubble:hover span:last-child::after {
+    transform: translateY(0);
 }
 
 .exercises__svg {
-    position: absolute;
     height: 75px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 100%;
-    left: 0;
-    transform: rotate(180deg);
+}
+
+.exerscises__top {
+    position: relative;
+    margin-bottom: 75px;
+    background-color: $baseLightBg;
 }
 
 .exersices__search {
@@ -139,10 +108,11 @@
     & div {
         display: flex;
         align-items: center;
-        width: 400px;
+        width: 100%;
         padding-left: 20px;
         padding-right: 20px;
         border-radius: 20px;
+        box-sizing: border-box;
         background-color: $baseWhite;
     }
 }
@@ -151,7 +121,7 @@
     & ul {
         display: flex;
         flex-wrap: wrap;
-        padding: 20px 0;
+        padding: 20px 16px;
     }
 
     & li {
@@ -171,3 +141,9 @@
         color: $svgRed;
     }
 }
+
+.exercises__items {
+   padding: 60px 24px;
+}
+
+

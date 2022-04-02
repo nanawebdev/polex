@@ -2,7 +2,8 @@ import React from 'react';
 import AudioEl from '../../elements/AudioEl';
 import Tip from '../../elements/Tip';
 import { BUCKET_URL } from '../../constants';
-import footerTop from "./../../assets/svg/footerTop.svg"
+import borderLight from "./../../assets/svg/borderLight.svg"
+import SvgElement from '../../elements/SvgElement';
 
 const chars = [
   {
@@ -183,17 +184,18 @@ export default function Alphabet() {
 
   return (
     <div className='Alphabet'>
-      <div className="top-line__svg" style={{ backgroundImage: "url(" + footerTop + ")" }}></div>
-
-      <h2>Польский алфавит</h2>
       <Tip
         text="Нажимайте на букву, чтобы прослушать произношение. Повторяйте за записью"
       />
-      <ul>
-        {renderAlphabet()}
-      </ul>
-      <div className="bottom-line__svg" style={{ backgroundImage: "url(" + footerTop + ")" }}></div>
 
+      {/* <SvgElement currentClass="top-line__svg" svg={borderLight} /> */}
+      <div className='Alphabet__items'>
+        <ul>
+          {renderAlphabet()}
+        </ul>
+      </div>
+
+      <SvgElement currentClass="bottom-line__svg" svg={borderLight} />
     </div>
   );
 }

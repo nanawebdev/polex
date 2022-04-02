@@ -149,15 +149,17 @@ ul {
     max-width: 1200px;
 }
 
-@media(max-width: $mobile) {
-    .header {
-    //    & a {
-    //        display: none;
-    //    }
+.flex {
+    display: flex;
+}
 
-    //    & .logo {
-    //        display: block;
-    //    }
-        
+@media(max-width: $tablet) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .bottom-line__svg {
+        height: 40px;
     }
 }

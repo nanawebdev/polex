@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function VideoPreview({ id, tags }) {
     const renderTags = () => {
-        return tags.map(v => <li key={v}>{v}</li>)
+        return tags.map(v => <li >{v}</li>)
     }
 
     return (
