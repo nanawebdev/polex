@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/polex/static/css/main.e9d90921.css",
-    "main.js": "/polex/static/js/main.058c75ea.js",
+    "main.css": "/polex/static/css/main.507c6d1e.css",
+    "main.js": "/polex/static/js/main.6271a64a.js",
     "static/media/teach.png": "/polex/static/media/teach.8a226d47f6111bc8774e.png",
     "static/media/imgMainGirl.svg": "/polex/static/media/imgMainGirl.b7eb1961ca6c5fd8a2c5.svg",
-    "static/media/footerTop.svg": "/polex/static/media/footerTop.6929d360d2e3321f330258655ade674c.svg",
+    "static/media/borderDark.svg": "/polex/static/media/borderDark.7e069a17085ddd966ee676335673da47.svg",
+    "static/media/borderLight.svg": "/polex/static/media/borderLight.6929d360d2e3321f330258655ade674c.svg",
     "static/media/rightImgMain.svg": "/polex/static/media/rightImgMain.cd02ce9f9845fff6b71f.svg",
     "index.html": "/polex/index.html",
-    "main.e9d90921.css.map": "/polex/static/css/main.e9d90921.css.map",
-    "main.058c75ea.js.map": "/polex/static/js/main.058c75ea.js.map"
+    "main.507c6d1e.css.map": "/polex/static/css/main.507c6d1e.css.map",
+    "main.6271a64a.js.map": "/polex/static/js/main.6271a64a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9d90921.css",
-    "static/js/main.058c75ea.js"
+    "static/css/main.507c6d1e.css",
+    "static/js/main.6271a64a.js"
   ]
 }
