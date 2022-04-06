@@ -39,7 +39,7 @@ export default function Word({ item, currentClass, showAnswer, changeQ }) {
                 {showAnswer && !resultShow
                     ? <span>{v}</span>
                     : <div
-                        className={`remember__wrapper ${resultShow && 'remember__wrapper--show'}`}
+                        className={`remember__input-wrapper ${resultShow && 'remember__input-wrapper--show'}`}
                     >
                         <input
                             readOnly={resultShow}
@@ -59,25 +59,34 @@ export default function Word({ item, currentClass, showAnswer, changeQ }) {
 
     const renderWord = () => {
         if (item.whereMissed === 'missedInCenter') {
-            return <>
-                <span>{item.left}</span>
-                {renderInputs()}
-                <span>{item.right}</span>
-            </>
+            return <div className={currentClass}>
+                <div className="remember__chars-inputs">
+                    <span>{item.left}</span>
+                    {renderInputs()}
+                    <span>{item.right}</span>
+                </div>
+                <div className="remember__translate">({item.translate})</div>
+            </div>
         }
 
         if (item.whereMissed === 'missedInStart') {
-            return <>
-                {renderInputs()}
-                <span>{item.right}</span>
-            </>
+            return <div className={currentClass}>
+                <div className="remember__chars-inputs">
+                    {renderInputs()}
+                    <span>{item.right}</span>
+                </div>
+                <div className="remember__translate">({item.translate})</div>
+            </div>
         }
 
         if (item.whereMissed === 'missedInFinish') {
-            return <>
-                <span>{item.left}</span>
-                {renderInputs()}
-            </>
+            return <div className={currentClass}>
+                <div className="remember__chars-inputs">
+                    <span>{item.left}</span>
+                    {renderInputs()}
+                    </div>
+                <div className="remember__translate">({item.translate})</div>
+            </div>
         }
 
         return
@@ -85,7 +94,7 @@ export default function Word({ item, currentClass, showAnswer, changeQ }) {
 
 
     return (
-        <div className={currentClass}>
+        <div>
             {renderWord()}
         </div>
     )

@@ -36,14 +36,14 @@ export const lessons = {
             element: 'remember',
             tags: ['grammar'],
             items: [
-                { id: 1, left: 'wi', missed: 'dz', right: 'ę', whereMissed: 'missedInCenter' },
-                { id: 2, left: 'mo', missed: 'rz', right: 'e', whereMissed: 'missedInCenter' },
-                { id: 3, missed: 'cz', right: 'ysty', whereMissed: 'missedInStart' },
-                { id: 4, left: 'le', missed: 'cz', whereMissed: 'missedInFinish' },
-                { id: 5, left: 'kupowa', missed: 'ć', whereMissed: 'missedInFinish' },
-                { id: 6, missed: 'ś', right: 'niadanie', whereMissed: 'missedInStart' },
-                { id: 7, missed: 'ź', right: 'le', whereMissed: 'missedInStart' },
-                { id: 8, left: 'go', missed: 'ś', right: 'ci', whereMissed: 'missedInCenter' },
+                { id: 1, left: 'wi', missed: 'dz', right: 'ę', whereMissed: 'missedInCenter', translate: 'я понимаю' },
+                { id: 2, left: 'mo', missed: 'rz', right: 'e', whereMissed: 'missedInCenter', translate: 'море' },
+                { id: 3, missed: 'cz', right: 'ysty', whereMissed: 'missedInStart', translate: 'чистый' },
+                { id: 4, left: 'le', missed: 'cz', whereMissed: 'missedInFinish', translate: 'но' },
+                { id: 5, left: 'kupowa', missed: 'ć', whereMissed: 'missedInFinish', translate: 'купить' },
+                { id: 6, missed: 'ś', right: 'niadanie', whereMissed: 'missedInStart', translate: 'завтрак' },
+                { id: 7, missed: 'ź', right: 'le', whereMissed: 'missedInStart', translate: 'плохо' },
+                { id: 8, left: 'go', missed: 'ś', right: 'ci', whereMissed: 'missedInCenter', translate: 'гости' },
             ]
         },
     ]

@@ -1,12 +1,12 @@
 .remember__word {
-    display: flex;
+    // display: flex;
     font-size: 20px;
     line-height: 22px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    align-items: center;
+    // align-items: center;
     margin: 16px 0;
-    justify-content: center;
+    // justify-content: center;
 }
 
 .remember__content {
@@ -81,7 +81,18 @@
     }
 }
 
-.remember__wrapper {
+.remember__translate {
+    font-size: 16px;
+    line-height: 18px;
+    color:rgba($textDark, 0.5);
+}
+
+.remember__chars-inputs {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.remember__input-wrapper {
     position: relative;
     overflow: hidden;
 
