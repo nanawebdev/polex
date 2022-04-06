@@ -44,6 +44,7 @@
 .remember__input {
     & span,
     & input {
+        color: $textDark;
         font-size: 20px;
         line-height: 22px;
         display: flex;
