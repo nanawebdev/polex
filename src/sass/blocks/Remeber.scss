@@ -1,12 +1,9 @@
 .remember__word {
-    // display: flex;
     font-size: 20px;
     line-height: 22px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    // align-items: center;
     margin: 16px 0;
-    // justify-content: center;
 }
 
 .remember__content {
@@ -53,6 +50,7 @@
         width: 20px;
         animation-name: show;
         animation-duration: 1s;
+        text-align: center;
     }
 
     & span {
@@ -63,6 +61,7 @@
     }
 
     & input {
+        padding: 0;
         box-sizing: border-box;
         border: none;
         border-bottom: 1px solid $logo;
