@@ -1,4 +1,4 @@
-.AudioEl {
+.AudioElement {
     display: flex;
 
     & button {
@@ -27,7 +27,7 @@
 }
 
 @media (max-width: $tablet) {
-    .AudioEl {
+    .AudioElement {
         & svg {
             font-size: 30px;
         }

@@ -5,7 +5,7 @@ export const lessons = {
             title: 'Задание 1',
             description: 'Поставь глагол в нужную форму',
             tags: ['grammar'],
-            element: 'putInRightForm',
+            element: 'putRightForm',
             items: [
                 { id: 1, leftPart: 'Jarek', rightPart: 'studentem i lubi frytki z keczupem', rightAnswer: 'jest', word: 'być' },
                 { id: 2, leftPart: 'Ja', rightPart: 'wegetarianką', rightAnswer: 'jestem', word: 'być' },

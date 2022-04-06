@@ -1,5 +1,5 @@
 import React from "react";
-import Tip from "../../elements/Tip";
+import Tip from "../../blocks/Tip";
 import Sentence from "./Sentence";
 
 export default function PutRightForm({data}) {
@@ -19,9 +19,9 @@ export default function PutRightForm({data}) {
     }
 
     return (
-        <div className="putInRightForm">
+        <div className="putRightForm">
             <Tip text="Proszę uzupełnić zdania brakującymi słowami." />
-            <div className="container putInRightForm__items">
+            <div className="container putRightForm__items">
                 {renderItems()}
             </div>
         </div>

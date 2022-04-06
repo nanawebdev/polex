@@ -1,6 +1,6 @@
 import React from 'react';
-import SvgElement from '../SvgElement';
-import borderDark from "./../../assets/svg/borderDark.svg"
+import SvgElement from '../elements/SvgElement';
+import borderDark from "./../assets/svg/borderDark.svg"
 
 export default function Tip({text}) {
     return (

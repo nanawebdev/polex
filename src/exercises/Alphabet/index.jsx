@@ -1,6 +1,6 @@
 import React from 'react';
-import AudioEl from '../../elements/AudioEl';
-import Tip from '../../elements/Tip';
+import AudioElement from '../../elements/AudioElement';
+import Tip from '../../blocks/Tip';
 import { BUCKET_URL } from '../../constants';
 import borderLight from "./../../assets/svg/borderLight.svg"
 import SvgElement from '../../elements/SvgElement';
@@ -176,7 +176,7 @@ export default function Alphabet() {
       return (
         <li className='Alphabet__item' key={v.id}>
           <p>{upperChar}</p>
-          <AudioEl soundsrc={v.sound} />
+          <AudioElement soundsrc={v.sound} />
         </li>
 
       );
@@ -187,8 +187,6 @@ export default function Alphabet() {
       <Tip
         text="Нажимайте на букву, чтобы прослушать произношение. Повторяйте за записью"
       />
-
-      {/* <SvgElement currentClass="top-line__svg" svg={borderLight} /> */}
       <div className='Alphabet__items'>
         <ul>
           {renderAlphabet()}

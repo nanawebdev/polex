@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Tip from "../../elements/Tip";
+import Tip from "../../blocks/Tip";
 import Word from "./Word";
 
 export default function Remember({ data }) {

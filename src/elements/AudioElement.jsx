@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from "@fortawesome/free-solid-svg-icons"
 
-export default function AudioEl(props) {
+export default function AudioElementement(props) {
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = React.createRef();
   
@@ -16,7 +16,7 @@ export default function AudioEl(props) {
     };
   
     return (
-      <div className='AudioEl'>
+      <div className='AudioElement'>
         <audio ref={audioRef}>
           <source src={props.soundsrc} type="audio/mp3" />
           <track kind="captions" {...props} />

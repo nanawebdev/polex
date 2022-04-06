@@ -1,4 +1,4 @@
-.putInRightForm {
+.putRightForm {
     align-items: center;
     font-size: 20px;
     line-height: 22px;
@@ -79,12 +79,12 @@
     transform: translateX(0);
 }
 
-.putInRightForm__items {
+.putRightForm__items {
     padding-top: 70px;
 }
 
 @media (max-width: $tablet) {
-    .putInRightForm {
+    .putRightForm {
         font-size: 16px;
         line-height: 18px;
     }

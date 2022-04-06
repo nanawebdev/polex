@@ -10,7 +10,7 @@ export default function Exercise({data, element}) {
     return (
         <div>
             { element === "alphabet" && <Alphabet data={data} /> }
-            { element === "putInRightForm" && <PutRightForm data={data} /> }
+            { element === "putRightForm" && <PutRightForm data={data} /> }
             { element === "remember" && <Remember data={data} /> }
             {/* { element === "writeRightText" && <WriteRightText data={data} /> }
             { element === "fillBlanks" && <FillBlanks data={data} /> }

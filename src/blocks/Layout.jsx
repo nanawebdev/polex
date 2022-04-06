@@ -1,11 +1,11 @@
 // import React, { useEffect, useState } from "react";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Socials from "../../elements/Socials";
-import SvgElement from "../../elements/SvgElement";
+import Socials from "./Socials";
+import SvgElement from "../elements/SvgElement";
 // import NotFinished from "../../pages/NotFinished";
-import Navigation from "../Navigation";
-import borderLight from "./../../assets/svg/borderLight.svg"
+import Navigation from "./Navigation";
+import borderLight from "./../assets/svg/borderLight.svg"
 
 const lis = [
     { id: 1, title: 'Упражнения', link: '/exercises' },

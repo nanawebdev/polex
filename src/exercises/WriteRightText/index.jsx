@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Tip from '../../elements/Tip';
+import Tip from '../../blocks/Tip';
 import WriteRightTextItem from './WriteRightTextItem';
 
 export default function WriteRightText({ wrtExs }) {
