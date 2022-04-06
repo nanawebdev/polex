@@ -52,11 +52,46 @@
         text-align: center;
         font-size: 1rem;
         line-height: 1.45em;
+        color: rgba($textDark, 1);
     }
 
     & h3 {
         font-weight: 100;
         color: rgba($textDark, 0.5);
+    }
+
+    & a {
+        text-decoration: none;
+        color: rgba($textDark, 0.5);
+
+        & p {
+            text-align: center;
+            font-size: 1rem;
+            line-height: 1.45em;
+            color: rgba($textDark, 1);
+        }
+
+        & h3 {
+            font-weight: 100;
+            color: rgba($textDark, 0.5);
+        }
+    }
+
+    & li:hover {
+        cursor: pointer;
+
+        & svg {
+            transform: scale(1.2);
+
+            & path {
+                fill: $logo;
+            }
+            
+        }
+
+        & h3 {
+            color: $logo;
+        }
     }
 }
 
@@ -129,6 +164,7 @@
         font-weight: 500;
         display: block;
         width: 200px;
+        margin: 40px auto;
 
         &:hover {
             color: $baseWhite;

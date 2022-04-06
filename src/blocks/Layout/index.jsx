@@ -13,21 +13,14 @@ const lis = [
 ]
 
 export default function Layout({ children }) {
-    // const [isBlocked, setIsBlocked] = useState(false)
-    // const [deskWidth, setDeskWidth] = useState(null)
-
-    // useEffect(() => {
-    //     isBlocked ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
-    //     window.addEventListener('resize', setDeskWidth(window.innerWidth))
-    //     setIsBlocked(deskWidth < 768)
-    //     console.log(document);
-    
-    // }, [deskWidth, isBlocked])
 
     return (
         <div className="wrapper">
-            {/* {isBlocked && <NotFinished />} */}
+
             <div className="content">
+                <div className="we-love-pease">
+                    <h2>допомога в навчанні польської мови online</h2>
+                </div>
                 <header className="header">
                     <div className="center">
                         <NavLink to="/" className="logo"><h3>POLEX</h3></NavLink>

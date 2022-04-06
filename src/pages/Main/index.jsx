@@ -24,19 +24,24 @@ export default function Main() {
                     </li>
 
                     <li>
-                        <FontAwesomeIcon icon={faYoutube} />
-                        <h3>youtube канал</h3>
-                        <p>Отрабатывай произношение, просто включив видео</p>
+                        <a href="https://www.youtube.com/channel/UCDtQC29FioPUW1L3e1r5OCA">
+                            <FontAwesomeIcon icon={faYoutube} />
+                            <h3>youtube канал</h3>
+                            <p>Отрабатывай произношение, просто включив видео</p>
+                        </a>
+
                     </li>
 
                     <li>
-                        <FontAwesomeIcon icon={faTelegram} />
-                        <h3>telegram чат</h3>
-                        <p>Будь в курсе выходящих видео и общайся в нашем чате</p>
+                        <a href="https://t.me/polishlesons">
+                            <FontAwesomeIcon icon={faTelegram} />
+                            <h3>telegram чат</h3>
+                            <p>Будь в курсе выходящих видео и общайся в нашем чате</p>
+                        </a>
                     </li>
                 </ul>
                 <SvgElement currentClass="bottom-line__svg" svg={borderLight} />
-          
+
             </section>
 
             <section className="main__promo promo">
@@ -47,7 +52,7 @@ export default function Main() {
                         <div>
                             <h2>Добро пожаловать <br /> на наш сайт</h2>
                             <p>Сейчас, он находится в стадии разработки. </p>
-                            
+
                             <p>Мы очень стараемся, чтобы
                                 создать для вас удобную платформу для изучения языка.
                             </p>
@@ -59,7 +64,7 @@ export default function Main() {
                         </div>
                     </div>
                 </div>
-               
+
             </section>
 
         </main >
