@@ -21,7 +21,7 @@ export default function PutRightForm({data}) {
     return (
         <div className="putRightForm">
             <Tip text="Proszę uzupełnić zdania brakującymi słowami." />
-            <div className="container putRightForm__items">
+            <div className="container PutRightForm__items">
                 {renderItems()}
             </div>
         </div>

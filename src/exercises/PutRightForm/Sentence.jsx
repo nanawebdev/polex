@@ -22,7 +22,7 @@ export default function Sentence({ key, leftPart, rightAnswer, word, rightPart }
     renderPart(leftPart)
 
     return (
-        <div className={`flex PutRightForm__item ${isRight && 'PutRightForm__item--done'}`} key={key}>
+        <div className={`PutRightForm__item ${isRight && 'PutRightForm__item--done'}`} key={key}>
             {renderPart(leftPart)}
             <div class="PutRightForm__input">
                 <div class={`PutRightForm__helper ${isShown && 'PutRightForm__helper--show'}`}>
