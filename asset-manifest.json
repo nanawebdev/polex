@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/polex/static/css/main.229226d8.css",
-    "main.js": "/polex/static/js/main.f088a91a.js",
+    "main.js": "/polex/static/js/main.67918558.js",
     "static/js/377.3cbbf487.chunk.js": "/polex/static/js/377.3cbbf487.chunk.js",
     "service-worker.js": "/polex/service-worker.js",
     "static/media/imgMainGirl.svg": "/polex/static/media/imgMainGirl.b7eb1961ca6c5fd8a2c5.svg",
@@ -10,11 +10,11 @@
     "static/media/rightImgMain.svg": "/polex/static/media/rightImgMain.cd02ce9f9845fff6b71f.svg",
     "index.html": "/polex/index.html",
     "main.229226d8.css.map": "/polex/static/css/main.229226d8.css.map",
-    "main.f088a91a.js.map": "/polex/static/js/main.f088a91a.js.map",
+    "main.67918558.js.map": "/polex/static/js/main.67918558.js.map",
     "377.3cbbf487.chunk.js.map": "/polex/static/js/377.3cbbf487.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.229226d8.css",
-    "static/js/main.f088a91a.js"
+    "static/js/main.67918558.js"
   ]
 }
